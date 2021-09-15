@@ -1,0 +1,35 @@
+{
+    "env": {
+      "browser": true,
+      "es2020": true,
+      "jest": true,
+      "node": true
+    },
+    "extends": [
+        "standard",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "jsx-a11y"
+    ],
+    "rules": {
+      "jsx-quotes": ["warn", "prefer-single"],
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-indent": [2, 2]
+    }
+}
