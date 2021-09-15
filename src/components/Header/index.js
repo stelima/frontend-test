@@ -11,8 +11,8 @@ const Header = ({ setSearch }) => {
     <HeaderWrapper>
       <Image src='/logo.png' alt='logo' width={50} height={30} />
       <form className='search' onSubmit={handleOnSubmitSearch}>
-        <input name='query' type='search' onChange={(e) => setSearch(e.target.value)} />
-        <button>
+        <input name='query' type='search' data-cy='search-input' onChange={(e) => setSearch(e.target.value)} />
+        <button data-cy='search-button'>
           <Image src='/search.png' alt='search' width={15} height={15} />
         </button>
       </form>

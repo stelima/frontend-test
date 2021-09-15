@@ -7,7 +7,7 @@ const CardProduct = ({ results }) =>
   <Wrapper>
     {results && results.slice(0, 4).map((results, index) => (
       <Link key={index} href={`/detail/?id=${results.id}`} as={`/detail/${results.id}`}>
-        <Card>
+        <Card data-cy='product'>
           <img src={results.thumbnail} alt={results.title} />
           <div>
             <p>$ {results.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}</p>
